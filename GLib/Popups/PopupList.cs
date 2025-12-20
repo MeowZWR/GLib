@@ -142,7 +142,7 @@ public class PopupList<T> {
 	private void DrawSearchBar(IEnumerable<T> enumerable) {
 		if (this._search == null) return;
 
-		if (ImGui.InputTextWithHint($"##{this._id}_Search", "Search...", ref this._searchInput, 256))
+		if (ImGui.InputTextWithHint($"##{this._id}_Search", "搜索...", ref this._searchInput, 256))
 			this.UpdateSearchFilter(enumerable);
 
 		if (!ImGui.IsAnyItemActive())

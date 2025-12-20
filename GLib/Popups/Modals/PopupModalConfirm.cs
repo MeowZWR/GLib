@@ -30,13 +30,13 @@ public class PopupModalConfirm : PopupModalBase {
 		ImGui.Text(this.Text);
 		ImGui.Spacing();
 		
-		if (ImGui.Button("Confirm")) {
+		if (ImGui.Button("确定")) {
 			this.Visible = false;
 			this.OnConfirm?.Invoke();
 		}
 		
 		ImGui.SameLine(0, ImGui.GetStyle().ItemInnerSpacing.X);
-		if (this.IsCancellable && ImGui.Button("Cancel"))
+		if (this.IsCancellable && ImGui.Button("取消"))
 			this.Visible = false;
 	}
 }

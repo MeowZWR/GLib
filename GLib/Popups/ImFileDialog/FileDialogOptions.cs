@@ -85,8 +85,8 @@ public record FileDialogOptions {
 	public FontAwesomeIcon DefaultFileIcon = FontAwesomeIcon.File;
 	
 	// TODO/Consider: Localization interface?
-	public string ConfirmButtonLabel = "Confirm";
-	public string CancelButtonLabel = "Cancel";
+	public string ConfirmButtonLabel = "确定";
+	public string CancelButtonLabel = "取消";
 	
 	public string DirectoryLabel = "Folder";
 

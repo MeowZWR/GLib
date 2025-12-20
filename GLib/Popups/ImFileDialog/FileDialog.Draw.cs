@@ -154,7 +154,7 @@ public partial class FileDialog {
 	}
 
 	private void DrawSearchInput() {
-		if (ImGui.InputTextWithHint($"##{this.Title}_Search", "Search...", ref this.Filter.Search, 255))
+		if (ImGui.InputTextWithHint($"##{this.Title}_Search", "搜索...", ref this.Filter.Search, 255))
 			this.ApplyEntryFilters();
 	}
 	
